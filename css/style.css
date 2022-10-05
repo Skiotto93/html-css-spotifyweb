@@ -5,29 +5,82 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: pointer;
 }
 /*-----------------
     COMMON
 -----------------*/
-
+body {
+    height: 100vh;
+}
+.flex {
+    display: flex;
+}
+a {
+    text-decoration: none;
+    color: #7a7d81;
+}
 /*-----------------
     TYPO
 -----------------*/
 * {
     font-family: 'Montserrat', sans-serif;
 }
+:root {
+    --page-container-color: #141922;
+    --footer-color: #282828;
+    --header-color: rgba(08, 0, 12, 0.2);
+    --sidebar-color: #000000;
+}
+.colorWeS {
+    color: #7a7d81;
+}
 /*-----------------
     HEADER
 -----------------*/
+header {
+    width: calc(100% - 230px);
+    background-color: var(--header-color);
+    position: fixed;
+    right: 0;
+    left: 230px;
+    top: 0;
+}
+.upgrade {
+    margin: 1.5625rem .625rem;
+    background-color: inherit;
+    padding: .9375rem 2.5rem;
+    border-radius: 1.25rem;
+    border: 1px solid #7a7d81;
+}
 
 /*-----------------
     SIDEBAR
 -----------------*/
-
+aside {
+    width: 14.375rem;
+    background-color: var(--sidebar-color);
+    overflow-y: auto;
+}
 /*-----------------
     MAIN
 -----------------*/
-
+.page-container {
+    height: calc(100% - 90px);
+    background-color: var(--page-container-color);
+}
+main {
+    width: calc(100% - 230px);
+    overflow-y: auto;
+}
 /*-----------------
     FOOTER
 -----------------*/
+footer {
+    height: 5.625rem;
+    background-color: var(--footer-color);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
