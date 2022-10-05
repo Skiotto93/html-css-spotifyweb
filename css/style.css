@@ -25,7 +25,7 @@ button {
 /*-----------------
     TYPO
 -----------------*/
-* {
+body {
     font-family: 'Montserrat', sans-serif;
 }
 :root {
@@ -37,51 +37,77 @@ button {
 .colorWeS {
     color: #7a7d81;
 }
+.playlist {
+    color: #fff;
+    padding: 15px 0;
+}
 /*-----------------
     HEADER
 -----------------*/
 header {
-    width: calc(100% - 230px);
     background-color: var(--header-color);
     position: fixed;
     right: 0;
-    left: 230px;
+    left: 14.375rem;
     top: 0;
     display: flex;
     justify-content: flex-end;
+    z-index: 100;
 }
 .upgrade {
-    margin: 1.5625rem .625rem;
+    margin: 25px 10px;
     background-color: inherit;
-    padding: .9375rem 2.5rem;
-    border-radius: 1.25rem;
-    border: 1px solid #7a7d81;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: .0625rem solid #7a7d81;
 }
 
 /*-----------------
     SIDEBAR
 -----------------*/
 aside {
-    width: 14.375rem;
+    width: 230px;
     background-color: var(--sidebar-color);
     overflow-y: auto;
+}
+.logo {
+    padding: 25px 25px 15px 25px;    
+}
+.main-navup nav ul li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+.main-nav {
+    margin-left: 25px;
+}
+.add {
+    padding: 0 10px;
+}
+.add:first-child a {
+    font-size: 40px;
+    color: inherit;
+}
+.install {
+    font-size: 16px;
+    background-color: black;
+    color: #7a7d81;
 }
 /*-----------------
     MAIN
 -----------------*/
 .page-container {
-    height: calc(100% - 90px);
+    height: calc(100% - 5.625rem);
     background-color: var(--page-container-color);
 }
 main {
-    width: calc(100% - 230px);
+    width: calc(100% - 14.375rem);
     overflow-y: auto;
 }
 /*-----------------
     FOOTER
 -----------------*/
 footer {
-    height: 5.625rem;
+    height: 90px;
     background-color: var(--footer-color);
     position: fixed;
     bottom: 0;
