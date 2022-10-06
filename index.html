@@ -21,7 +21,10 @@
         <section class="page-container flex">
             <aside class="sidebar">
                 <div class="logo">
-                    <a href="#"><img src="img/logo.svg" alt="#"></a>
+                    <a href="#">
+                        <img src="img/logo.svg" alt="#">
+                        <img class="logosmall" src="img/logo-small.svg" alt="">
+                    </a>
                 </div>
                 <div class="main-nav">
                     <div class="main-navup">
@@ -29,17 +32,22 @@
                             <ul>
                                 <li>
                                     <a href="#">
-                                        <i class="fa-solid fa-house"></i> Home
+                                        <img class="home" src="img/home.svg" alt="#">
+                                        <img class="logosmall" src="img/home.svg" alt="#"> Home
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa-solid fa-magnifying-glass"></i> Cerca
+                                        <img class="search" src="img/search.svg" alt="#">
+                                        <img class="logosmall" src="img/search.svg" alt="#">
+                                         Cerca
                                     </a>
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="fa-solid fa-book"></i> La tua raccolta
+                                        <img class="library" src="img/libreria.svg" alt="#">
+                                        <img class="logosmall" src="img/libreria.svg" alt="#">
+                                         La tua raccolta
                                     </a>
                                 </li>
                             </ul>
@@ -63,8 +71,11 @@
                     <div class="main-nav-down">
                         <nav>
                             <ul>
-                                <li>
+                                <li id="borderbottom">
                                     <a href="#"><i class="fa-solid fa-circle-arrow-down"></i> Installa app</a>
+                                </li>
+                                <li>
+                                    <a href="#"><img class="profile" src="img/profile.svg" alt="#"> John Doe</a>
                                 </li>
                             </ul>
                         </nav>
@@ -75,6 +86,42 @@
 
             </main>
         </section>
-        <footer></footer>
+        <footer>
+            <div class="container flex space-between items-center">
+                <div class="left flex space-between">
+                    <div class="sinister flex items-center">
+                        <img src="img/sinister.jpeg" alt="#">
+                        <div class="song">
+                            <span>Sinister</span>
+                            <div class="namesong">
+                                <span>Brano Nome</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="like flex items-center">
+                        <div id="heart">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+                        <div id="folder">
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="center-up">
+                        <div class="random">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </div>
+                        <div class="previous">
+                            <i class="fa-solid fa-backward-step"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="right">
+
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
