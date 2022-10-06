@@ -28,6 +28,9 @@ button {
 .items-center {
     align-items: center;
 }
+.justify-center {
+    justify-content: center;
+}
 /*-----------------
     TYPO
 -----------------*/
@@ -156,9 +159,9 @@ footer {
 .container {
     width: 100%;
     height: 100%;
+    padding: 0 1.25rem;
 }
 .left {
-    padding-left: 1.25rem;
     width: 15%;
 }
 .center {
@@ -185,4 +188,28 @@ footer {
 }
 #heart {
     padding-right: .9375rem;
+}
+.center-up {
+    align-items: stretch;
+}
+.play {
+    background-color: inherit;
+    padding: 0 1.875rem;
+}
+.previous {
+    padding-left: 1.875rem;
+}
+.forward {
+    padding-right: 1.875rem;
+}
+#desktop {
+    padding: 0 .9375rem;
+}
+#volume {
+    padding-right: .9375rem;
+}
+footer button {
+    background-color: inherit;
+    border: none;
+    color: #7a7d81;
 }
