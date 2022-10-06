@@ -173,17 +173,25 @@ main section {
 .box {
     width: calc(100% / 6 - 3.75rem);
     margin-right: .625rem;
-    margin-top: 1.25rem;
 }
 .box img {
     width: 100%;
 }
+.song-image {
+    margin-top: 1.25rem;
+}
 .category h4 {
     padding: .9375rem 0;
 }
-.category span {
+.recently span {
     color: #7a7d81;
     font-size: 14px;
+}
+.recently h2 {
+    margin-bottom: 1.25rem;
+}
+.image-cicle {
+    border-radius: 50%;
 }
 /*-----------------
     FOOTER
