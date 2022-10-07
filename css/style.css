@@ -86,7 +86,7 @@ header {
 header button:hover, header a:hover {
     border-color: #fff;
     color: #fff;
-    font-size: 105%;
+    font-size: 101%;
 }
 @media screen and (max-width: 600px) {
     header {
@@ -104,7 +104,7 @@ aside {
     
 }
 .logo {
-    padding: 1.5625rem 1.5625rem .9375rem 1.5625rem;    
+    padding: 1.5625rem 1.5625rem .9375rem 0;    
 }
 .logosmall {
     max-width: 1.875rem;
@@ -124,10 +124,10 @@ aside {
 }
 .main-nav {
     margin: 0 1.5625rem;
+    height: 100%;
 }
 .main-nav-center {
     overflow-y: auto;
-    overflow: hidden;
     height: 100%;
 }
 .main-nav-center nav ul li {
@@ -141,11 +141,11 @@ aside {
 }
 .add {
     padding: 0 .625rem;
-}
-.add:first-child a {
     font-size: 2.5rem;
     color: inherit;
+    margin-right: .3125rem;
 }
+
 .install {
     font-size: 1rem;
     background-color: black;
@@ -235,6 +235,10 @@ main section {
 /*HOVER*/
 .find nav ul li a:hover {
     color: #fff;
+}
+.box img:hover {
+    display: flex;
+    background-image: <i class="fa-solid fa-circle-play">;
 }
 /*-----------------
     FOOTER
@@ -339,6 +343,7 @@ footer button {
 }
 .play i:hover {
     font-size: 1.875rem;
+    margin-top: .625rem;
 }
 .timepassed:hover {
     background-color: lightgreen;
