@@ -19,6 +19,10 @@ body {
     display: flex;
     flex-wrap: wrap;
 }
+.flexcol {
+    display: flex;
+    flex-direction: column;
+}
 a {
     text-decoration: none;
     color: #7a7d81;
@@ -47,7 +51,7 @@ body {
 :root {
     --page-container-color: #141922;
     --footer-color: #282828;
-    --header-color: rgba(08, 0, 12, 0.2);
+    --header-color: rgba(0, 0, 0, 0.3);
     --sidebar-color: #000000;
 }
 .colorWeS {
@@ -77,6 +81,13 @@ header {
     border-radius: 1.25rem;
     border: 1px solid #7a7d81;
 }
+/*HOVER*/                       /*questo hover è da fixare*/ 
+
+header button:hover, header a:hover {
+    border-color: #fff;
+    color: #fff;
+    font-size: 105%;
+}
 @media screen and (max-width: 600px) {
     header {
         right: 0;
@@ -90,7 +101,7 @@ header {
 aside {
     width: 14.375rem;
     background-color: var(--sidebar-color);
-    overflow-y: auto;
+    
 }
 .logo {
     padding: 1.5625rem 1.5625rem .9375rem 1.5625rem;    
@@ -103,13 +114,31 @@ aside {
     list-style: none;
     padding-bottom: .625rem;
 }
+.main-nav-center nav ul li {
+    list-style: none;
+    padding-bottom: .625rem;
+}
+.main-nav-down nav ul li {
+    list-style: none;
+    padding-bottom: .625rem;
+}
 .main-nav {
     margin: 0 1.5625rem;
+}
+.main-nav-center {
+    overflow-y: auto;
+    overflow: hidden;
+    height: 100%;
+}
+.main-nav-center nav ul li {
+    padding-bottom: .625rem;
+}
+.main-nav-down {
+    margin-top: auto;
 }
 .home, .search, .library {
     max-width: 1.25rem;
 }
-
 .add {
     padding: 0 .625rem;
 }
@@ -131,6 +160,16 @@ aside {
     background-color: #7a7d81;
     border-radius: 50%;
     margin-top: .9375rem;
+}
+/*HOVER*/
+.main-navup nav ul li a:hover, .main-nav-center nav ul li a:hover {
+    color: #fff;
+}
+.main-nav-center button:hover {
+    background-color: #fff;
+}
+.main-nav-down nav ul li a:hover {
+    color: #fff;
 }
 @media screen and (max-width:600px) {
     aside {
@@ -162,7 +201,7 @@ main section {
 .find nav ul li {
     list-style: none;
     padding-bottom: .625rem;
-    padding: .625rem 1.5625rem;
+    margin: .625rem 1.5625rem;
 }
 .find nav ul li:first-child {
     border-bottom: .125rem solid lightgreen;
@@ -193,6 +232,10 @@ main section {
 .image-cicle {
     border-radius: 50%;
 }
+/*HOVER*/
+.find nav ul li a:hover {
+    color: #fff;
+}
 /*-----------------
     FOOTER
 -----------------*/
@@ -210,13 +253,14 @@ footer {
     padding: 0 1.25rem;
 }
 .left {
-    width: 15%;
+    width: 30%;
 }
 .center {
-    width: 70%;
+    width: 40%;
 }
 .right {
-    width: 15%;
+    width: 30%;
+    justify-content: flex-end;
 }
 .sinister img {
     max-width: 3.125rem;
@@ -229,7 +273,7 @@ footer {
     color: #7a7d81;
 }
 .like {
-
+    margin-left: 1.25rem;
 }
 #heart, #folder {
     color: #7a7d81;
@@ -277,11 +321,25 @@ footer {
 }
 .audio-bar-small {
     height: .3125rem;
-    width: 60%;
+    width: 20%;
     background-color: #5a5a5a;
 }
 footer button {
     background-color: inherit;
     border: none;
     color: #7a7d81;
+}
+/*HOVER*/
+.like i:hover {
+    color: #fff;
+    font-weight: bold;
+}
+.icons-right i:hover {
+    color: #fff;
+}
+.play i:hover {
+    font-size: 1.875rem;
+}
+.timepassed:hover {
+    background-color: lightgreen;
 }
