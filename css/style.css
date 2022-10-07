@@ -51,7 +51,7 @@ body {
 :root {
     --page-container-color: #141922;
     --footer-color: #282828;
-    --header-color: rgba(0, 0, 0, 0.3);
+    --header-color: rgba(0, 0, 0, 0.1);
     --sidebar-color: #000000;
 }
 .colorWeS {
@@ -210,11 +210,23 @@ main section {
     color: #fff;
 }
 .box {
-    width: calc(100% / 6 - 3.75rem);
+    width: calc(100% / 6 - .625rem);
     margin-right: .625rem;
+}
+.playhover {
+    position: absolute;
+    color: white;   
+    font-size: 1.875rem;
+    display: none;
+    transition: all 0.3s ease 0s;
+    top: 44%; 
+    left: 45%;
 }
 .box img {
     width: 100%;
+}
+.imageposition {
+    position: relative;
 }
 .song-image {
     margin-top: 1.25rem;
@@ -236,9 +248,10 @@ main section {
 .find nav ul li a:hover {
     color: #fff;
 }
-.box img:hover {
-    display: flex;
-    background-image: <i class="fa-solid fa-circle-play">;
+.playhover:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.3);
+    
 }
 /*-----------------
     FOOTER
